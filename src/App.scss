@@ -1,38 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lustria&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+
+$cosmic-latte: #FEF9E8ff;
+$selective-yellow: #FEB401ff;
+$pumpkin: #FD6B00ff;
+$honeydew: #DAE9DBff;
+$cambridge-blue: #95AF88ff;
+$avocado: #5A8107ff;
+$dark-moss-green: #566A1Aff;
+$night: #0B0C0Fff;
+
+$headings: 'Arvo', serif;
+$body: 'Lato', sans-serif;
+
+body {
+  margin: 0;
+  font-family: $body;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $headings;
+
+}
+
 .App {
+  height: 100vh;
+  background: $cambridge-blue;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+// font-family: 'Arvo',
+// serif;
+// font-family: 'Lato',
+// sans-serif;
+// font-family: 'Lustria', serif;
+// font-family: 'Quattrocento', serif;
+// font-family: 'Quattrocento Sans',
+// sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+// --cosmic-latte: #FEF9E8ff;
+// --selective-yellow: #FEB401ff;
+// --pumpkin: #FD6B00ff;
+// --honeydew: #DAE9DBff;
+// --cambridge-blue: #95AF88ff;
+// --avocado: #5A8107ff;
+// --dark-moss-green: #566A1Aff;
+// --night: #0B0C0Fff;
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+// /* SCSS HEX */
+// $cosmic-latte: #FEF9E8ff;
+// $selective-yellow: #FEB401ff;
+// $pumpkin: #FD6B00ff;
+// $honeydew: #DAE9DBff;
+// $cambridge-blue: #95AF88ff;
+// $avocado: #5A8107ff;
+// $dark-moss-green: #566A1Aff;
+// $night: #0B0C0Fff;
+
+
+
+// /* SCSS RGB */
+// $cosmic-latte: rgba(254, 249, 232, 1);
+// $selective-yellow: rgba(254, 180, 1, 1);
+// $pumpkin: rgba(253, 107, 0, 1);
+// $honeydew: rgba(218, 233, 219, 1);
+// $cambridge-blue: rgba(149, 175, 136, 1);
+// $avocado: rgba(90, 129, 7, 1);
+// $dark-moss-green: rgba(86, 106, 26, 1);
+// $night: rgba(11, 12, 15, 1);
+
+// /* SCSS Gradient */
+// $gradient-top: linear-gradient(0deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-right: linear-gradient(90deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-bottom: linear-gradient(180deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-left: linear-gradient(270deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-top-right: linear-gradient(45deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-bottom-right: linear-gradient(135deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-top-left: linear-gradient(225deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-bottom-left: linear-gradient(315deg, #FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
+// $gradient-radial: radial-gradient(#FEF9E8ff, #FEB401ff, #FD6B00ff, #DAE9DBff, #95AF88ff, #5A8107ff, #566A1Aff, #0B0C0Fff);
